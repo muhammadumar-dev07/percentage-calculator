@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percentage Calculator</title>
+  </head>
+  <body>
+    <h1>Percentage Calculator</h1>
+
+    <form
+      onsubmit="
+        calculatePercentage();
+        return false;
+      "
+    >
+      <input
+        type="number"
+        name="obtMarks"
+        id="obtMarks"
+        placeholder="Enter Your obtained Marks"
+      />
+      <input
+        type="number"
+        name="totalMarks"
+        id="totalMarks"
+        placeholder="Enter the total Marks"
+      />
+      <button>Calculate</button>
+    </form>
+    <div id="percentage"></div>
+
+    <!-- BMI Calculator -->
+
+    <form
+      onsubmit="
+        calculateBMI();
+        return false;
+      "
+    >
+      <input
+        type="number"
+        name="weight"
+        id="weight"
+        placeholder="Enter Your weight in kg"
+      />
+      <input
+        type="decimal"
+        name="height"
+        id="height"
+        placeholder="Enter Your height in m"
+      />
+      <button>Calculate BMI</button>
+    </form>
+    <div id="bmi"></div>
+
+    <!-- To study 
+     Event Loop in JS -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
